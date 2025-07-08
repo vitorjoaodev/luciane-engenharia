@@ -57,14 +57,12 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
-            <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-3">
-              <span className="text-white font-bold text-xl">LR</span>
-            </div>
-            <div>
-              <h1 className="text-xl font-bold text-primary">Luciane Rodrigues</h1>
-              <p className="text-sm text-gray-600">Engenharia & Arquitetura</p>
-            </div>
-          </div>
+          <img 
+            src="/src/assets/logo-luciane.svg" 
+            alt="Luciane Engenharia e Arquitetura" 
+            className="h-12 w-auto"
+          />
+        </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">

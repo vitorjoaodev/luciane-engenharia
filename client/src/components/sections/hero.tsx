@@ -62,7 +62,7 @@ export function Hero() {
             size="lg"
             variant="outline"
             onClick={() => scrollToSection("contact")}
-            className="border-white text-white hover:bg-white hover:text-primary"
+            className="border-white text-white hover:bg-white hover:text-primary bg-transparent"
           >
             {t("hero.cta2")}
           </Button>
