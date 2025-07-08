@@ -58,7 +58,7 @@ export function Header() {
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
           <img 
-            src="/src/assets/logo-luciane.svg" 
+            src="/logo-luciane.svg" 
             alt="Luciane Engenharia e Arquitetura" 
             className="h-12 w-auto"
           />
