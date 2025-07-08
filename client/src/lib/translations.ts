@@ -118,7 +118,7 @@ export const translations = {
         projects: "Obras:",
         phone: "Telefone",
         address: "Endereço",
-        addressText: "São Paulo, SP - Brasil"
+        addressText: "Av. Imperatriz Leopoldina, 845 - Vila Leopoldina, São Paulo - SP, 05305-011"
       },
       hours: {
         title: "Horário de Atendimento",
@@ -276,7 +276,7 @@ export const translations = {
         projects: "Projects:",
         phone: "Phone",
         address: "Address",
-        addressText: "São Paulo, SP - Brazil"
+        addressText: "Av. Imperatriz Leopoldina, 845 - Vila Leopoldina, São Paulo - SP, 05305-011"
       },
       hours: {
         title: "Business Hours",

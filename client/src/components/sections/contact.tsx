@@ -86,7 +86,7 @@ export function Contact() {
     {
       icon: Phone,
       title: t("contact.info.phone"),
-      items: [{ label: "", value: "+55 (11) 9999-9999" }],
+      items: [{ label: "", value: "(11) 3917-0292" }],
     },
     {
       icon: MapPin,

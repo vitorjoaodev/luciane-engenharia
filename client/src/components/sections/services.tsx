@@ -69,7 +69,7 @@ export function Services() {
   };
 
   return (
-    <section id="services" className="py-20 bg-gray-50">
+    <section id="services" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -97,27 +97,35 @@ export function Services() {
             const Icon = service.icon;
             return (
               <motion.div key={service.key} variants={itemVariants}>
-                <Card className="h-full hover:shadow-lg transition-shadow duration-300">
-                  <CardHeader>
-                    <div className={`w-16 h-16 ${service.color} rounded-lg flex items-center justify-center mb-4`}>
-                      <Icon className="h-8 w-8 text-white" />
+                <Card className="h-full hover:shadow-xl transition-all duration-300 hover:scale-105 bg-white border-0 shadow-lg relative overflow-hidden group">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <CardHeader className="text-center pb-2 relative z-10">
+                    <div className={`w-20 h-20 ${service.color} rounded-full flex items-center justify-center mb-6 mx-auto shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110`}>
+                      <Icon className="h-10 w-10 text-white" />
                     </div>
-                    <CardTitle className="text-xl mb-2">
+                    <CardTitle className="text-2xl mb-4 text-gray-800 group-hover:text-primary transition-colors duration-300">
                       {t(`services.${service.key}.title`)}
                     </CardTitle>
-                    <CardDescription className="text-gray-600">
+                    <CardDescription className="text-gray-600 text-base leading-relaxed">
                       {t(`services.${service.key}.description`)}
                     </CardDescription>
                   </CardHeader>
-                  <CardContent>
-                    <ul className="space-y-2">
+                  <CardContent className="pt-4 relative z-10">
+                    <ul className="space-y-3">
                       {(t(`services.${service.key}.features`) as string[]).map((feature, index) => (
-                        <li key={index} className="flex items-center text-sm text-gray-600">
-                          <CheckCircle className="h-4 w-4 text-primary mr-2" />
-                          {feature}
+                        <li key={index} className="flex items-center text-sm text-gray-700 group-hover:text-gray-800 transition-colors duration-300">
+                          <CheckCircle className="h-5 w-5 text-primary mr-3 flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
+                          <span className="font-medium">{feature}</span>
                         </li>
                       ))}
                     </ul>
+                    <div className="mt-6 pt-4 border-t border-gray-100">
+                      <div className="text-center">
+                        <span className="text-xs text-gray-500 group-hover:text-primary transition-colors duration-300 font-medium">
+                          Saiba mais
+                        </span>
+                      </div>
+                    </div>
                   </CardContent>
                 </Card>
               </motion.div>

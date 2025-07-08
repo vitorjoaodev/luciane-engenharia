@@ -99,6 +99,13 @@ The application uses two main database tables:
 ```
 Changelog:
 - July 08, 2025. Initial setup
+- July 08, 2025. Updated logo to use provided PNG image
+- July 08, 2025. Enhanced services section with improved animations and hover effects
+- July 08, 2025. Removed featured projects section as requested
+- July 08, 2025. Updated contact information:
+  - Phone: (11) 3917-0292
+  - Address: Av. Imperatriz Leopoldina, 845 - Vila Leopoldina, São Paulo - SP, 05305-011
+  - LinkedIn: https://www.linkedin.com/company/104625924/
 ```
 
 ## User Preferences

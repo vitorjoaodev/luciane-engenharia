@@ -10,9 +10,11 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center mb-4">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center mr-3">
-                <span className="text-white font-bold">LR</span>
-              </div>
+              <img 
+                src="/attached_assets/Piloto da TI (8)_1751956583494.png" 
+                alt="Luciane Rodrigues Engenharia & Arquitetura" 
+                className="h-10 w-auto mr-3 filter invert"
+              />
               <div>
                 <h3 className="text-lg font-bold">Luciane Rodrigues</h3>
                 <p className="text-gray-300">Engenharia & Arquitetura</p>
@@ -28,7 +30,7 @@ export function Footer() {
               <a href="#" className="text-gray-300 hover:text-white transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
+              <a href="https://www.linkedin.com/company/104625924/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
             </div>
@@ -71,11 +73,11 @@ export function Footer() {
               </li>
               <li className="flex items-center">
                 <Phone className="h-4 w-4 mr-2" />
-                <span>+55 (11) 9999-9999</span>
+                <span>(11) 3917-0292</span>
               </li>
               <li className="flex items-center">
                 <MapPin className="h-4 w-4 mr-2" />
-                <span>{t("contact.info.addressText")}</span>
+                <span>Av. Imperatriz Leopoldina, 845 - Vila Leopoldina, São Paulo - SP</span>
               </li>
             </ul>
           </div>

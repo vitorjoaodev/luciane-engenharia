@@ -6,20 +6,7 @@ import { motion } from "framer-motion";
 export function Projects() {
   const { t } = useTranslation();
 
-  const featuredProjects = [
-    {
-      key: "featured1",
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      area: "15.000m²",
-      year: "2023",
-    },
-    {
-      key: "featured2",
-      image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      area: "25.000m²",
-      year: "2024",
-    },
-  ];
+
 
   const projects = [
     {
@@ -81,44 +68,7 @@ export function Projects() {
           </p>
         </motion.div>
 
-        {/* Featured Projects */}
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12"
-        >
-          {featuredProjects.map((project) => (
-            <motion.div key={project.key} variants={itemVariants}>
-              <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                <img
-                  src={project.image}
-                  alt={t(`projects.${project.key}.title`)}
-                  className="w-full h-64 object-cover"
-                />
-                <CardHeader>
-                  <CardTitle className="text-2xl mb-3">
-                    {t(`projects.${project.key}.title`)}
-                  </CardTitle>
-                  <CardDescription className="text-gray-600 mb-4">
-                    {t(`projects.${project.key}.description`)}
-                  </CardDescription>
-                  <div className="flex items-center justify-between">
-                    <Badge variant="secondary" className="text-primary font-semibold">
-                      {project.area}
-                    </Badge>
-                    <span className="text-sm text-gray-500">
-                      {t(`projects.${project.key}.status`)}
-                    </span>
-                  </div>
-                </CardHeader>
-              </Card>
-            </motion.div>
-          ))}
-        </motion.div>
-
-        {/* Other Projects */}
+        {/* Projects */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -128,24 +78,30 @@ export function Projects() {
         >
           {projects.map((project) => (
             <motion.div key={project.key} variants={itemVariants}>
-              <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                <img
-                  src={project.image}
-                  alt={t(`projects.${project.key}.title`)}
-                  className="w-full h-48 object-cover"
-                />
+              <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-105 bg-white border-0 shadow-lg">
+                <div className="relative overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={t(`projects.${project.key}.title`)}
+                    className="w-full h-56 object-cover transition-transform duration-300 hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+                  <Badge className="absolute top-4 right-4 bg-primary text-white font-semibold">
+                    {project.area}
+                  </Badge>
+                </div>
                 <CardContent className="p-6">
-                  <CardTitle className="text-lg mb-2">
+                  <CardTitle className="text-xl mb-3 text-gray-800">
                     {t(`projects.${project.key}.title`)}
                   </CardTitle>
-                  <CardDescription className="text-gray-600 text-sm mb-3">
+                  <CardDescription className="text-gray-600 text-sm leading-relaxed mb-4">
                     {t(`projects.${project.key}.description`)}
                   </CardDescription>
                   <div className="flex items-center justify-between">
-                    <Badge variant="outline" className="text-primary font-semibold">
-                      {project.area}
-                    </Badge>
-                    <span className="text-xs text-gray-500">{project.year}</span>
+                    <span className="text-sm text-primary font-medium">Concluído em {project.year}</span>
+                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+                      <span className="text-primary font-bold text-xs">✓</span>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
