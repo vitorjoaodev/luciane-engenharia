@@ -5,6 +5,7 @@ import { LanguageSwitcher } from "@/components/ui/language-switcher";
 import { useTranslation } from "@/hooks/use-translation";
 import { Menu } from "lucide-react";
 
+
 export function Header() {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
@@ -58,9 +59,13 @@ export function Header() {
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
             <img 
-              src="/attached_assets/Piloto da TI (8)_1751956583494.png" 
+              src="/logo-luciane.png"
               alt="Luciane Rodrigues Engenharia & Arquitetura" 
               className="h-12 w-auto mr-3"
+              onError={(e) => {
+                const target = e.target as HTMLImageElement;
+                target.src = "/logo-luciane.svg";
+              }}
             />
             <div>
               <h1 className="text-xl font-bold text-primary">Luciane Rodrigues</h1>

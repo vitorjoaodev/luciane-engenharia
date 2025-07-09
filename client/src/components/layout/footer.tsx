@@ -1,6 +1,7 @@
 import { useTranslation } from "@/hooks/use-translation";
 import { Facebook, Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react";
 
+
 export function Footer() {
   const { t } = useTranslation();
 
@@ -11,9 +12,13 @@ export function Footer() {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center mb-4">
               <img 
-                src="/attached_assets/Piloto da TI (8)_1751956583494.png" 
+                src="/logo-luciane.png" 
                 alt="Luciane Rodrigues Engenharia & Arquitetura" 
                 className="h-10 w-auto mr-3 filter invert"
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.src = "/logo-luciane.svg";
+                }}
               />
               <div>
                 <h3 className="text-lg font-bold">Luciane Rodrigues</h3>

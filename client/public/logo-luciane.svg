@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Castelo estilizado -->
+  <g fill="#4A90E2" stroke="#2D5A8B" stroke-width="1">
+    <!-- Base do castelo -->
+    <rect x="30" y="120" width="140" height="60" rx="5"/>
+    
+    <!-- Torres -->
+    <rect x="20" y="90" width="30" height="90" rx="3"/>
+    <rect x="150" y="90" width="30" height="90" rx="3"/>
+    <rect x="85" y="70" width="30" height="110" rx="3"/>
+    
+    <!-- Telhados -->
+    <polygon points="35,90 45,70 55,90" fill="#2D5A8B"/>
+    <polygon points="155,90 165,70 175,90" fill="#2D5A8B"/>
+    <polygon points="90,70 100,50 110,70" fill="#2D5A8B"/>
+    
+    <!-- Detalhes arquitetônicos -->
+    <rect x="40" y="100" width="8" height="12" fill="#1E3A5F"/>
+    <rect x="160" y="100" width="8" height="12" fill="#1E3A5F"/>
+    <rect x="95" y="80" width="10" height="15" fill="#1E3A5F"/>
+    
+    <!-- Porta principal -->
+    <ellipse cx="100" cy="150" rx="15" ry="20" fill="#1E3A5F"/>
+    
+    <!-- Janelas -->
+    <rect x="70" y="135" width="8" height="10" fill="#1E3A5F"/>
+    <rect x="122" y="135" width="8" height="10" fill="#1E3A5F"/>
+    <rect x="42" y="105" width="6" height="8" fill="#1E3A5F"/>
+    <rect x="162" y="105" width="6" height="8" fill="#1E3A5F"/>
+  </g>
+  
+  <!-- Texto -->
+  <text x="100" y="40" font-family="serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2D5A8B">
+    Luciane
+  </text>
+  <text x="100" y="25" font-family="serif" font-size="12" text-anchor="middle" fill="#4A90E2">
+    Engenharia e Arquitetura
+  </text>
+</svg>
