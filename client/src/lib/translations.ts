@@ -81,9 +81,27 @@ export const translations = {
       }
     },
     
+    // Partners Gallery
+    partnersGallery: {
+      title: "Conheça os Nossos Parceiros",
+      subtitle: "Conheça as grandes empresas que confiam em nossos serviços de engenharia e arquitetura",
+      zamloc: {
+        description: "Soluções em locação de equipamentos industriais"
+      },
+      ultragaz: {
+        description: "Líder em distribuição de energia para o Brasil"
+      },
+      mrv: {
+        description: "Maior construtora e incorporadora da América Latina"
+      },
+      casaConstrutor: {
+        description: "Rede de materiais de construção"
+      }
+    },
+    
     // Partners
     partners: {
-      title: "Nossos Parceiros",
+      title: "Nossos Clientes",
       subtitle: "Trabalhamos com as principais marcas e empresas do mercado, oferecendo soluções personalizadas",
       burgerKing: {
         title: "Burger King",
@@ -239,9 +257,27 @@ export const translations = {
       }
     },
     
+    // Partners Gallery
+    partnersGallery: {
+      title: "Meet Our Partners",
+      subtitle: "Meet the great companies that trust our engineering and architecture services",
+      zamloc: {
+        description: "Industrial equipment rental solutions"
+      },
+      ultragaz: {
+        description: "Leader in energy distribution for Brazil"
+      },
+      mrv: {
+        description: "Largest construction and development company in Latin America"
+      },
+      casaConstrutor: {
+        description: "Construction materials retail chain"
+      }
+    },
+    
     // Partners
     partners: {
-      title: "Our Partners",
+      title: "Our Clients",
       subtitle: "We work with the main brands and companies in the market, offering customized solutions",
       burgerKing: {
         title: "Burger King",

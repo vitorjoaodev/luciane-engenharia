@@ -2,7 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { useTranslation } from "@/hooks/use-translation";
 import { motion } from "framer-motion";
-import { Factory, Building, Store, Hospital, Crown } from "lucide-react";
+import { Factory, Building, Store, Hospital } from "lucide-react";
 
 export function Partners() {
   const { t } = useTranslation();
@@ -81,8 +81,12 @@ export function Partners() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
               <CardContent className="p-12 flex flex-col justify-center">
                 <div className="flex items-center mb-6">
-                  <div className="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center mr-4">
-                    <Crown className="h-8 w-8 text-red-600" />
+                  <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mr-4 p-2">
+                    <img 
+                      src="/burger-king-logo.png" 
+                      alt="Burger King Logo" 
+                      className="w-full h-full object-contain"
+                    />
                   </div>
                   <div>
                     <CardTitle className="text-2xl text-gray-900">

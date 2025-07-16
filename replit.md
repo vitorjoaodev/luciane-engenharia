@@ -106,6 +106,13 @@ Changelog:
   - Phone: (11) 3917-0292
   - Address: Av. Imperatriz Leopoldina, 845 - Vila Leopoldina, São Paulo - SP, 05305-011
   - LinkedIn: https://www.linkedin.com/company/104625924/
+- July 13, 2025. Major site restructure:
+  - Removed "Projects" section completely
+  - Created new "Partners Gallery" section with logos: Zamloc, Ultragaz, MRV, Casa do Construtor
+  - Changed "Our Partners" section title to "Our Clients" 
+  - Updated Burger King logo from icon to official brand image
+  - Added partner company logos to public directory
+  - Updated navigation to reflect new structure
 ```
 
 ## User Preferences

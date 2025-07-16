@@ -32,12 +32,7 @@ export function Header() {
       >
         {t("nav.services")}
       </button>
-      <button
-        onClick={() => scrollToSection("projects")}
-        className="text-gray-700 hover:text-primary transition-colors"
-      >
-        {t("nav.projects")}
-      </button>
+
       <button
         onClick={() => scrollToSection("partners")}
         className="text-gray-700 hover:text-primary transition-colors"
