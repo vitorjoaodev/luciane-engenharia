@@ -19,7 +19,7 @@ export const translations = {
     
     // Services
     services: {
-      title: "Nossos Serviços",
+      title: "Orgulhosamente Atendemos",
       subtitle: "Oferecemos soluções completas em engenharia e arquitetura, atendendo desde franquias até grandes complexos industriais",
       civil: {
         title: "Engenharia Civil",
