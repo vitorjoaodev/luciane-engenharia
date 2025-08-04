@@ -29,7 +29,7 @@ export const translations = {
       architecture: {
         title: "Arquitetura",
         description: "Projetos arquitetônicos inovadores que combinam funcionalidade, estética e sustentabilidade",
-        features: ["Projeto Arquitetônico", "Interiores", "Paisagismo"]
+        features: ["Projeto Arquitetônico", "Interiores", "Projetos Residenciais", "Paisagismo"]
       },
       franchises: {
         title: "Franquias",
@@ -49,7 +49,7 @@ export const translations = {
       management: {
         title: "Gerenciamento",
         description: "Gestão completa de projetos do planejamento à entrega, garantindo qualidade e prazos",
-        features: ["Planejamento", "Execução", "Controle de Qualidade"]
+        features: ["Planejamento", "Acompanhamento de Obra", "Execução", "Controle de Qualidade"]
       }
     },
     
